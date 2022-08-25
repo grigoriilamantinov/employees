@@ -11,7 +11,7 @@ public enum TaskState {
 
     private final String state;
 
-    public static TaskState getStatus (final String state) {
+    public static TaskState getState(final String state) {
         return Arrays.stream(TaskState.values())
             .filter(taskState -> taskState.state.equals(state))
             .findFirst()
